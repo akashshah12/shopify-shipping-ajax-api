@@ -14,7 +14,6 @@ var t = {
 	  jQuery.ajax("/cart/async_shipping_rates", {
 		dataType: "json",
 		success: function(r, n, a) {
-		  debugger;
 		  if(200 === a.status){
         if(r!=null && r.shipping_rates!=null && r.shipping_rates.length>0){
           var html = "<p>Delivery option available for "+e.zip+"</p>";
